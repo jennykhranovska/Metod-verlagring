@@ -6,16 +6,21 @@ namespace Metodöverlagring
     internal class Program
     {
         static void Main(string[] args)
+
         {
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
             Console.WriteLine(FormatName("Anna", "Svensson"));
-            
+            Console.ResetColor();
 
-            
-            Console.WriteLine(FormatName("Anna", "Maria", "Svensson")); 
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(FormatName("Anna", "Maria", "Svensson"));
+            Console.ResetColor();
 
-
-            
-            Console.WriteLine(FormatName("Anna", "Svensson", true)); 
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(FormatName("Anna", "Svensson", true));
+            Console.ResetColor();
 
         }
 
